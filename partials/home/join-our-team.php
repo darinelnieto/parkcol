@@ -19,10 +19,10 @@ wp_enqueue_script(
     true
 );
 ?>
-<section class="join-our-team-partial-97c157">
+<section class="join-our-team-partial-97c157" id="contact" aria-labelledby="contact-title">
     <?php if(!empty($contact['title'])): ?>
         <div class="title-contain mb-5">
-            <h2 class="title"><?= $contact['title']; ?></h2>
+            <h2 class="title" id="contact-title"><?= $contact['title']; ?></h2>
         </div>
     <?php endif; ?>
     <div class="container">
@@ -31,7 +31,7 @@ wp_enqueue_script(
                 <?php if(!empty($contact['subtitle'])): ?>
                     <h3 class="subtitle"><?= $contact['subtitle']; ?></h3>
                 <?php endif; if(!empty($contact['desription'])): ?>
-                    <p class="form_intro"><?= $contact['desription']; ?></p>
+                    <div class="form_intro"><?= $contact['desription']; ?></div>
                 <?php endif ?>
             </div>
             <div class="col-12 col-md-6 col-lg-7">

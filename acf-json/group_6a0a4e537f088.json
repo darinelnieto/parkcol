@@ -1579,7 +1579,7 @@
                     "label": "Desription",
                     "name": "desription",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -1588,12 +1588,12 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Déjanos tus datos y adjunta tu hoja de\r\nvida. Te contactaremos si tu perfil se\r\najusta a alguna de nuestras vacantes\r\nactuales o futuras.",
-                    "maxlength": "",
+                    "default_value": "",
                     "allow_in_bindings": 0,
-                    "rows": 3,
-                    "placeholder": "",
-                    "new_lines": "br"
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 },
                 {
                     "key": "field_6a0bdcfe0f9cf",
@@ -1640,5 +1640,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1779195747
+    "modified": 1779196539
 }

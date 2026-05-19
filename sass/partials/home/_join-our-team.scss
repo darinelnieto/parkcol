@@ -18,7 +18,11 @@
         margin-bottom: 2rem;
     }
     .form_intro{
-        @include title-h4;
+        @include parragraph;
+        a{
+            text-decoration: none;
+            color: $text_color;
+        }
     }
     .form-container{
         max-width: 600px;
