@@ -15,11 +15,11 @@ $(()=>{
                 menu_active = false;
             }
         });
+        $('.nav-menu-contain').on('click', 'a', function(){
+            $('.nav-menu-contain').slideUp(300);
+            $('.custom-logo-link').css('filter', 'none');
+            $('.bar-menu').removeClass('active');
+            menu_active = false;
+        });
     }
-    $('.nav-menu-contain').on('click', 'a', function(){
-        $('.nav-menu-contain').slideUp(300);
-        $('.custom-logo-link').css('filter', 'none');
-        $('.bar-menu').removeClass('active');
-        menu_active = false;
-    });
 });
