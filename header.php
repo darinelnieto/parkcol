@@ -27,12 +27,19 @@ if ( ! defined( 'ABSPATH' ) ) {
   <meta name="author" content="Parkcol">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php wp_head(); ?>
-  <?php 
-    $json_ld_scripts = get_field('json_ld_scripts', 'option');
-    if(!empty($json_ld_scripts)): foreach($json_ld_scripts as $item):
-  ?>
-    <?= $item['item']; ?>
-  <?php endforeach; endif; ?>
+  <?php if ( have_rows('json_ld_scripts', 'option') ) : ?>
+    <?php while ( have_rows('json_ld_scripts', 'option') ) : the_row(); ?>
+      <?php
+        $json_ld_item = get_sub_field('item', false);
+        if ( empty($json_ld_item) ) {
+          continue;
+        }
+        $json_ld_item = preg_replace('/^\s*<p>\s*(<script\b[\s\S]*?<\/script>)\s*<\/p>\s*$/i', '$1', $json_ld_item);
+      ?>
+      <?= $json_ld_item; ?>
+    <?php endwhile; ?>
+  <?php endif; ?>
+
 </head>
 
 <body <?php body_class(); ?>>
