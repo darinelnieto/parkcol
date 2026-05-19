@@ -1,0 +1,15 @@
+@import 'default_theme';
+
+// sajo include zone (don't delete anything below)
+// #SajoPartials
+@import "./partials/home/join-our-team";
+@import "./partials/home/experience";
+@import "./partials/home/technology";
+@import "./partials/home/customer-slide";
+@import "./partials/home/services";
+@import "./partials/home/about-us";
+@import "./partials/home/hero";
+@import "./partials/globals/header";
+
+// #SajoTemplates
+@import "./templates/parkcol-page-template";

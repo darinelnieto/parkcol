@@ -1,0 +1,87 @@
+.join-our-team-partial-97c157 {
+    background: $white;
+    padding-bottom: 3rem;
+    .title-contain{
+        background: $red_dark;
+        padding: 3rem 0;
+        .title{
+            text-align: center;
+            font-family: $manrope;
+            font-weight: 600;
+            color: $white;
+            font-size: 30px;
+            margin: 0;
+        }
+    }
+    .subtitle{
+        @include title-h2;
+        margin-bottom: 2rem;
+    }
+    .form_intro{
+        @include title-h4;
+    }
+    .form-container{
+        max-width: 600px;
+        margin: 0 auto;
+        .wpcf7-not-valid-tip{
+            font-family: $manrope;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+        }
+        .input-content{
+            p{
+                margin-bottom: 1rem;
+                label{
+                    @include parragraph;
+                    font-weight: 600;
+                }
+                input{
+                    width: 100%;
+                    padding: .5rem 1rem;
+                    border: none;
+                    border-bottom: 1px solid $text_color;
+                    border-radius: 0;
+                    font-family: $manrope;
+                    font-size: 16px;
+                    line-height: 28px;
+                    font-weight: 300;
+                    color: $text_color;
+                    outline: none;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        .file{
+            p{
+                .wpcf7-form-control-wrap, br{
+                    display: none;
+                }
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                .file-cv-name{
+                    @include parragraph;
+                    font-weight: 300;
+                }
+                button{
+                    @include btn-dark;
+                }
+            }
+        }
+        .polices{
+            .wpcf7-list-item{
+                margin: 0;
+            }
+            a{
+                text-decoration: none;
+                @include parragraph;
+            }
+        }
+        .wpcf7-submit{
+            @include btn-red-dark;
+            border: none;
+            outline: none;
+        }
+    }
+}

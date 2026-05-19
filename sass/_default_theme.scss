@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*======== Colors ========*/
+$text_dark: #1b2333;
+$red_dark: #a50000;
+$white: #ffffff;
+$bg_blue_light: #EEF6FA;
+$bg_blue_cards: #d3e5ee;
+$text_color: #6a7281;
+/*======== Font ========*/
+$roboto: 'Roboto', sans-serif;
+$manrope: 'Manrope', sans-serif;
+/*======== Default Theme ========*/
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    .container{
+        max-width: 1320px !important;
+    }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@mixin btn-red-dark{
+    background: $red_dark;
+    color: $white;
+    font-size: 15px;
+    line-height: 1;
+    padding: 12px 24px;
+    text-align: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    width: max-content;
+    &:hover{
+        background: $text_dark;
+        color: $white;
+    }
+    @media(max-width: 1266px){
+        font-size: 18px;
+    }
+}
+
+@mixin btn-red-white{
+    background: $white;
+    color: $text_dark;
+    font-size: 15px;
+    line-height: 1;
+    padding: 12px 24px;
+    text-align: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    width: max-content;
+    &:hover{
+        background: $red_dark;
+        color: $white;
+    }
+    @media(max-width: 1266px){
+        font-size: 18px;
+    }
+}
+@mixin btn-dark{
+    background: $text_dark;
+    color: $white;
+    font-size: 15px;
+    line-height: 1;
+    padding: 12px 24px;
+    text-align: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    width: max-content;
+    &:hover{
+        background: $red_dark;
+        color: $white;
+    }
+    @media(max-width: 1266px){
+        font-size: 18px;
+    }
+}
+@mixin title-h2{
+    font-family: $manrope;
+    font-size: 3.353em;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1em;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0px;
+    margin-bottom: 0.43em;
+    color: $text_dark;
+    @media(max-width:768px){
+        font-size: 28px;
+        line-height: 1.2em;
+    }
+}
+@mixin title-h3{
+    font-family: $manrope;
+    font-size: 1.412em;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.417em;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0px;
+    margin-top: 1.33em;
+    margin-bottom: 0.74em;
+    color: $text_dark;
+    @media(max-width:768px){
+        font-size: 22px;
+        line-height: 1.4em;
+    }
+}
+@mixin title-h4{
+    font-family: $manrope;
+    font-size: 1.188em;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5em;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0px;
+    margin-bottom: 0.74em;
+    @media(max-width:768px){
+        font-size: 20px;
+        line-height: 1.4em;
+    }
+}
+@mixin parragraph{
+    font-family: $manrope;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: $text_color;
+    strong{
+        font-weight: 600;
+    }
+}
+@mixin dots-red-dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    .owl-dot{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $text_color;
+        opacity: 0.5;
+        &.active{
+            opacity: 1;
+            background: $red_dark;
+        }
+    }
+}
+// Footer
+#footer-wrapper{
+    background: $text_dark;
+    padding: 2rem 0;
+    p{
+        @include parragraph;
+        color: $bg_blue_light;
+        margin-bottom: 0;
+        font-weight: 200;
+    }
+}

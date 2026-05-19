@@ -1,0 +1,19 @@
+// JS for partial: experience\n
+$(()=>{
+    $('.reviews-slide').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            }
+        }
+    });
+});

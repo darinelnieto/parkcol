@@ -1,0 +1,109 @@
+.about-us-partial-476df8 {
+    background: $bg_blue_light;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .about-us{
+        .title{
+            @include title-h2;
+        }
+        .description{
+            h3{
+                @include title-h3;
+                @media(max-width: 768px){
+                    br{
+                        display: none;
+                    }
+                }
+            }
+            p, a, li{
+                @include parragraph;
+            }
+        }
+    }
+    // Grid cards
+    .card-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background: $bg_blue_cards;
+        height: 100%;
+        border-radius: 20px;
+        padding: 33px 20px;
+        .card-img{
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+        }
+        p{
+            font-family: $manrope;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 24px;
+            color: $text_dark;
+            text-align: center;
+        }
+    }
+    // Quote
+    .quote{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        .quote-text{
+            display: flex;
+            gap: 0px;
+            align-items: center;
+            justify-content: center;
+            @include parragraph;
+            img{
+                width: 33px;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+        .contact-btn{
+            @include btn-red-dark;
+             text-decoration: none;
+             margin: 0 auto;
+        }
+    }
+    .sub-title{
+        @include title-h3;
+    }
+    .grid-slide{
+        .item{
+            text-align: center;
+            color: $red_dark;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            .card-title{
+                @include title-h4;
+            }
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+            }
+            p{
+                @include parragraph;
+                color: $red_dark;
+                max-width: 75%;
+                margin-bottom: 0;
+                @media(max-width: 768px){
+                    max-width: 100%;
+                }
+            }
+        }
+        .owl-dots{
+            @include dots-red-dark;
+        }
+    }
+}
