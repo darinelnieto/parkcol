@@ -19,34 +19,36 @@ $experience = get_field('experience_group');
 $labels = $experience['grid_items'];
 $reviews = get_field('reviews_slide');
 ?>
-<section class="experience-partial-16be58">
+<section class="experience-partial-16be58" id="experiencia" aria-labelledby="exp-title">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12">
+            <div class="col-12 col-md-10 col-lg-8 text-center">
                 <?php if(!empty($experience['title'])): ?>
-                    <h2 class="title"><?= $experience['title']; ?></h2>
+                    <h2 class="title" id="exp-title"><?= $experience['title']; ?></h2>
                 <?php endif; if(!empty($experience['description'])): ?>
                     <div class="description">
                         <?= $experience['description']; ?>
                     </div>
                 <?php endif; ?>
             </div>
-            <?php if(!empty($labels)): foreach($labels as $item): ?>
-                <div class="col-12 col-sm-6 col-md-3 text-center experience-item mb-4">
-                    <?= wp_get_attachment_image($item['icon'] ?? '', 'medium', false, array(
-                        'class' => 'icon',
-                        'loading' => 'lazy',
-                        'decoding' => 'async'
-                    )); ?>
-                    <div class="text">
-                        <?php if(!empty($item['label'])): ?>
-                            <h4 class="experience-name"><?= $item['label']; ?></h4>
-                        <?php endif; if(!empty($item['description'])): ?>
-                            <p class="exp_info"><?= $item['description']; ?></p>
-                        <?php endif; ?>
+            <div class="value-props row justify-content-center">
+                <?php if(!empty($labels)): foreach($labels as $item): ?>
+                    <div class="col-12 col-sm-6 col-md-3 text-center experience-item mb-4">
+                        <?= wp_get_attachment_image($item['icon'] ?? '', 'medium', false, array(
+                            'class' => 'icon',
+                            'loading' => 'lazy',
+                            'decoding' => 'async'
+                        )); ?>
+                        <div class="text">
+                            <?php if(!empty($item['label'])): ?>
+                                <h4 class="experience-name"><?= $item['label']; ?></h4>
+                            <?php endif; if(!empty($item['description'])): ?>
+                                <p class="exp_info"><?= $item['description']; ?></p>
+                            <?php endif; ?>
+                        </div>
                     </div>
-                </div>
-            <?php endforeach; endif; ?>
+                <?php endforeach; endif; ?>
+            </div>
             <!-- Reviews -->
             <?php if(!empty($reviews['items'])): ?>
                 <div class="col-12 mt-5">

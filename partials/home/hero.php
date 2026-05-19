@@ -20,7 +20,7 @@ $tabs = $hero['tabs'];
 $main_cta = $hero['main_cta'];
 $sec_cta = $hero['secondary_cta'];
 ?>
-<section class="hero-partial-b54141">
+<section class="hero-partial-b54141" id="inicio" aria-labelledby="hero-title">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
@@ -32,7 +32,7 @@ $sec_cta = $hero['secondary_cta'];
                         'decoding' => 'async',
                     )); ?>
                     <div class="texts">
-                        <h1 class="hero-title"><?= $hero['title'] ?? the_title(); ?></h1>
+                        <h1 class="hero-title" id="hero-title"><?= $hero['title'] ?? the_title(); ?></h1>
                         <!-- Description -->
                         <p class="hero-subtitle"><?= $hero['description'] ?? ''; ?></p>
                         <!-- Tabs -->

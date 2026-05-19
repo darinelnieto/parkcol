@@ -24,7 +24,7 @@
         @include title-h2;
         margin-top: 0.67em;
         margin-bottom: 0.48em;
-        max-width: 502.852px;
+        max-width: 1000px;
     }
     .subtitle{
         @include title-h3;
@@ -35,6 +35,10 @@
     }
     .description{
         @include parragraph;
+        h3{
+            @include title-h3;
+            margin-bottom: 1.5rem;
+        }
     }
     .call-to-action{
         @include btn-red-dark;

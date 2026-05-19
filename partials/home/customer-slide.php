@@ -17,11 +17,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 $slide = get_field('customer_slide');
 $main_img = get_field('image_after_slide');
+$title = get_field('allies_title');
 ?>
-<section class="customer-slide-partial-dca853">
+<section class="customer-slide-partial-dca853" id="aliados" aria-labelledby="aliados-title">
     <?php if(!empty($slide)): ?>
     <div class="container">
         <div class="row">
+            <?php if(!empty($title)): ?>
+                <div class="col-12 text-center">
+                    <h2 class="title" id="aliados-title"><?= $title; ?></h2>
+                </div>
+            <?php endif; ?>
             <div class="col-12 customer-slide owl-carousel">
                 <?php foreach($slide as $img): ?>
                     <div class="item">

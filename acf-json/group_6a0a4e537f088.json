@@ -676,6 +676,28 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
+                            "key": "field_6a0c55103fd6e",
+                            "label": "Aria labelledby",
+                            "name": "aria_labelledby",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "valet-title",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_6a0a8b0177263"
+                        },
+                        {
                             "key": "field_6a0a8b1977264",
                             "label": "Main image",
                             "name": "main_image",
@@ -814,6 +836,27 @@
             "selected": 0
         },
         {
+            "key": "field_6a0c5e9cc55ca",
+            "label": "Allies title",
+            "name": "allies_title",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Clientes y aliados que confían en Parkcol",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
             "key": "field_6a0a999f65236",
             "label": "Customer slide",
             "name": "customer_slide",
@@ -923,32 +966,11 @@
                     "new_lines": "br"
                 },
                 {
-                    "key": "field_6a0ba41e6e252",
-                    "label": "Subitle",
-                    "name": "subitle",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Transformamos la movilidad con tecnología avanzada",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
                     "key": "field_6a0ba4346e253",
                     "label": "Description",
                     "name": "description",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -957,12 +979,12 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "En Valet Parkcol, implementamos herramientas digitales que optimizan\r\nla gestión de estacionamientos y la experiencia del usuario.",
-                    "maxlength": "",
+                    "default_value": "",
                     "allow_in_bindings": 0,
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": ""
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 },
                 {
                     "key": "field_6a0bb62e1fc77",
@@ -1618,5 +1640,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1779170945
+    "modified": 1779195747
 }

@@ -18,19 +18,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 $technology = get_field('technology_group');
 $items = $technology['items'];
 ?>
-<section class="technology-partial-8d1638">
+<section class="technology-partial-8d1638" id="tecnologia" aria-labelledby="tech-title">
     <div class="container">
         <div class="row">
             <?php if(!empty($technology['title'])): ?>
                 <div class="col-12 mb-md-5">
-                    <h2 class="title"><?= $technology['title'] ?? ''; ?></h2>
+                    <h2 class="title" id="tech-title"><?= $technology['title'] ?? ''; ?></h2>
                 </div>
             <?php endif; ?>
             <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <?php if(!empty($technology['subitle'])): ?>
-                    <h3 class="subtitle"><?= $technology['subitle']; ?></h3>
-                <?php endif; if(!empty($technology['description'])): ?>
-                    <p class="description"><?= $technology['description']; ?></p>
+                <?php if(!empty($technology['description'])): ?>
+                    <div class="description"><?= $technology['description']; ?></div>
                 <?php endif; if(!empty($technology['call_to_action'])): $cta = $technology['call_to_action']; ?>
                     <a href="<?= $cta['url']; ?>" class="call-to-action" target="<?= $cta['target'] ?? '_self'; ?>">
                         <?= $cta['title'] ?? 'Contáctanos'; ?>

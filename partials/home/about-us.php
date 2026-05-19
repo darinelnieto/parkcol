@@ -28,7 +28,7 @@ $slide = $about['strength'];
             <div class="col-12 col-md-10 col-lg-9 text-center mb-5">
                 <!-- About -->
                 <div class="about-us">
-                    <h2 class="title"><?= $about_des['title'] ?? ''; ?></h2>
+                    <h2 class="title" id="about-title"><?= $about_des['title'] ?? ''; ?></h2>
                     <div class="description">
                         <?= $about_des['description'] ?? ''; ?>
                     </div>

@@ -16,6 +16,12 @@
             .desciption{
                 @include parragraph;
                 margin-bottom: 2rem;
+                max-width: 85%;
+                ul{
+                    li{
+                        margin-bottom: 0.5rem;
+                    }
+                }
             }
             .call-to-action{
                 @include btn-red-dark;

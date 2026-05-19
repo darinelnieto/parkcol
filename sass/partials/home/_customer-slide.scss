@@ -1,5 +1,9 @@
 .customer-slide-partial-dca853 {
     background: #ffffff;
+    h2{
+        @include title-h2;
+        margin-bottom: 1rem;
+    }
     .customer-slide-main-image{
         margin-top: 2rem;
         width: 100%;
