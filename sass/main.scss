@@ -2,6 +2,11 @@
 
 // sajo include zone (don't delete anything below)
 // #SajoPartials
+@import "./partials/services/operations";
+@import "./partials/services/how-it-works";
+@import "./partials/services/why-choose-us";
+@import "./partials/services/they-trust-us";
+@import "./partials/services/hero";
 @import "./partials/home/join-our-team";
 @import "./partials/home/experience";
 @import "./partials/home/technology";
@@ -12,4 +17,5 @@
 @import "./partials/globals/header";
 
 // #SajoTemplates
+@import "./templates/services-template";
 @import "./templates/parkcol-page-template";

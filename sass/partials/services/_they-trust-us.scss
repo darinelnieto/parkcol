@@ -1,0 +1,36 @@
+.they-trust-us-partial-dddad3 {
+    background: $white;
+    .they-trust-us-slide-content{
+        padding: 15px 0;
+        background: $text_dark;
+        .they-trust-us-label{
+            @include title-h4;
+            font-weight: 600;
+            color: $bg_blue_cards;
+            margin: 0;
+            @media (max-width: 768px){
+                text-align: center;
+                margin-bottom: .5rem;
+            }
+        }
+        .company-slide{
+            .company-name{
+                @include title-h4;
+                color: $bg_blue_light;
+                margin-bottom: 0;
+            }
+        }
+    }
+    // statistics
+    .statistic-item{
+        .statistic-value{
+            @include title-h2;
+            font-weight: 800;
+            color: $red_dark;
+            margin-bottom: .5rem;
+        }
+        .statistic-label{
+            @include parragraph;
+        }
+    }
+}

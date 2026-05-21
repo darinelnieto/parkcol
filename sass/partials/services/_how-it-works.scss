@@ -1,0 +1,55 @@
+.how-it-works-partial-a30f76 {
+    padding: 4rem 0;
+    background: $bg_blue_light;
+    .label-ask{
+        @include title-h4;
+        color: $red_dark;
+        margin-bottom: .5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .title{
+        @include title-h2;
+        color: $text_dark;
+        margin-bottom: 1.5rem;
+    }
+    .description{
+        @include parragraph;
+        max-width: 1000px;
+        margin: 0 auto;
+        @media(max-width: 1266px){
+            br{
+                display: none;
+            }
+        }
+    }
+    .step-item{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .step-number{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 auto;
+            background: $red_dark;
+            @include title-h3;
+            color: #fff;
+        }
+        .texts{
+            .step-title{
+                @include title-h4;
+                color: $text_dark;
+            }
+            .step-description{
+                @include parragraph;
+                color: $text_color;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

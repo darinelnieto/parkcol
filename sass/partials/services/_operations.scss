@@ -1,0 +1,64 @@
+.operations-partial-f35d19 {
+    padding: 4rem 0;
+    background: $text_dark;
+    .label-ask{
+        @include title-h4;
+        color: $red_dark;
+        margin-bottom: .5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .title{
+        @include title-h2;
+        color: $bg_blue_light;
+        margin-bottom: 1.5rem;
+    }
+    .description{
+        @include parragraph;
+        max-width: 1000px;
+        color: $white;
+        @media(max-width: 1266px){
+            br{
+                display: none;
+            }
+        }
+    }
+    .call-to-action{
+        margin-top: 2rem;
+        @include btn-red-dark;
+        &:hover{
+            background: $white;
+            color: $text_dark;
+        }
+    }
+    .technology-item{
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 2rem 2rem 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &:hover{
+            transform: scale(1.02) translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .technology-icon{
+            width: 48px;
+            height: auto;
+            object-fit: contain;
+        }
+        .texts{
+            .technology-title{
+                @include title-h4;
+                color: $bg_blue_light;
+            }
+            .technology-description{
+                @include parragraph;
+                color: $white;
+            }
+        }
+    }
+}

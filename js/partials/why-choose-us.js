@@ -1,0 +1,1 @@
+// JS for partial: why-choose-us\n
